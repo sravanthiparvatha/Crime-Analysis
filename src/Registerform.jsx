@@ -113,20 +113,26 @@ class Registerform extends React.Component{
                                     <br/>
                                     <br/>
                                     <br/>
-                                        <h1>SIGN UP</h1>
+                                        <h1><u>SIGN UP</u></h1><br></br>
                                         <div className="login-agileits-top">
                                             <form autoComplete="off" onSubmit={this.handleSubmit}>
-                                                <p>User Name </p>
+                                            <p>
+                                                User Name &emsp;&emsp;&emsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <input type="text"
                                                     className="name"
                                                     id="name"
                                                     pattern="^[A-Za-z0-9_.-@]*$"
                                                     maxLength="12"
                                                     autoFocus
+                                                    
                                                     placeholder="Enter username"
                                                     onChange={this.handleNameChange}
                                                     value={this.state.name} required />
-                                                <p>email id </p>
+                                                    </p>
+
+                                                    <p>
+                                                email id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                                                 <input type="email"
                                                     className="email"
                                                     id="email"
@@ -134,35 +140,50 @@ class Registerform extends React.Component{
                                                     placeholder="Enter email id"
                                                     onChange={this.handleEmailChange}
                                                     value={this.state.email} required />
-                                                <p>Password</p>
+                                                    </p>
+                                                <p>Password &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                                                 <input type="password"
                                                     className="password"
                                                     id="password"
                                                     required pattern="^[A-Za-z0-9_.-@]*$"
-                                                    required minLength="6" maxLength="10"
+                                                  //  required minLength="6" maxLength="10"
                                                     autoFocus
                                                     placeholder="Enter password"
                                                     onChange={this.handlePasswordChange}
                                                     value={this.state.password} />
-                                                <p>Confirm Password</p>
+                                                    </p>
+                                                <p>Confirm Password&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <input type="password"
                                                     className="confirmPassword"
                                                     id="confirmPassword"
                                                     required pattern="^[A-Za-z0-9_.-@]*$"
-                                                    required minLength="6" maxLength="10"
+                                                   // required minLength="6" maxLength="10"
                                                     autoFocus
                                                     placeholder="Re-enter password"
                                                     onChange={this.handleConfirmPasswordChange}
                                                     value={this.state.confirmPassword} />
+                                                      &emsp;&emsp;
+                                                      
+                                                    
                                                 <label className="anim">
-                                                    <input type="checkbox" className="checkbox" />
-                                                    <span> Remember me ?</span>
-                                                </label>
+                                                
+                                            <input type = "checkbox"/>&emsp;
+                                            Remember me?
+                                                   
+                                                </label>  &emsp; 
+                                                <br>
+                                                </br>
+                                                <br></br>
+                                                &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;
                                                 <input type="submit" value="Sign up" />
+                                                </p>
                                             </form>
+                                            
                                         </div>
                                         <div className="login-agileits-bottom wthree">
-                                            <h6><a href="#">Already a user? Login</a></h6>
+                                        <h6>Already a user?&emsp; &nbsp;
+                                            <a href="Loginform.jsx"> Login</a></h6>
                                         </div>
                                     </div>
                                 </div>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
+import Loginform from './Loginform';
 import Registerform from './Registerform';
 import './App.css';
 import Header from './Header';
 import SlideImages from './SlideImages';
-import logo from './logo.svg';
+
 
 
 
@@ -27,6 +27,10 @@ class App extends Component {
                     </div>
         
                 </div>
+                <div>
+                  <Loginform handleRegister={this.handleSubmit}>
+                  </Loginform>
+                  </div>
             </div>  
         </section>
       </div>
