@@ -147,7 +147,7 @@ class Registerform extends React.Component{
                                                     className="password"
                                                     id="password"
                                                     required pattern="^[A-Za-z0-9_.-@]*$"
-                                                  //  required minLength="6" maxLength="10"
+                                                  // required minLength="6" maxLength="10"
                                                     autoFocus
                                                     placeholder="Enter password"
                                                     onChange={this.handlePasswordChange}
